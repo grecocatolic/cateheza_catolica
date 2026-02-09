@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Lumina Tinerilor</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">Lumina Tinerilor</div>
+    <nav class="nav">
+      <a href="index.html" class="nav-link">Acasă</a>
+      <a href="resurse.html" class="nav-link">Resurse</a>
+      <a href="calendar.html" class="nav-link">Calendar</a>
+      <a href="rugaciuni.html" class="nav-link">Rugăciuni</a>
+      <a href="calea_crucii.html" class="nav-link">Calea Crucii</a>
+      <a href="paraclis.html" class="nav-link">Paraclis</a>
+      <a href="biserica-catolica-rasarit.html" class="nav-link">Biserici Catolice Răsăritene</a>
+      <a href="despre.html" class="nav-link">Despre</a>
+      <a href="contact.html" class="nav-link nav-cta">Contact</a>
+    </nav>
+  </header>
+
+  <main class="page">
+    <header class="page-header">
+      <p class="eyebrow">Ia legătura</p>
+      <h1>Scrie-ne un mesaj</h1>
+      <p class="lede">Formular demo (fără backend). La trimitere primești un mesaj de confirmare în pagină.</p>
+    </header>
+
+    <section class="form-card">
+      <form id="contact-form">
+        <div class="form-grid">
+          <label>
+            Nume
+            <input type="text" name="nume" required placeholder="Prenume și nume">
+          </label>
+          <label>
+            E-mail
+            <input type="email" name="email" required placeholder="nume@exemplu.com">
+          </label>
+          <label class="full">
+            Subiect
+            <input type="text" name="subiect" required placeholder="Despre ce vrei să vorbim?">
+          </label>
+          <label class="full">
+            Mesaj
+            <textarea name="mesaj" rows="5" required placeholder="Spune-ne câteva detalii"></textarea>
+          </label>
+        </div>
+        <button class="btn primary" type="submit">Trimite</button>
+        <p id="form-confirm" class="confirm"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Program catehetic greco-catolic · <span class="current-year"></span> · <a href="rugaciuni.html">Rugăciuni</a> · <a href="calea_crucii.html">Calea Crucii</a> · <a href="paraclis.html">Paraclis</a></p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calendar întâlniri | Lumina Tinerilor</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">Lumina Tinerilor</div>
+    <nav class="nav">
+      <a href="index.html" class="nav-link">Acasă</a>
+      <a href="resurse.html" class="nav-link">Resurse</a>
+      <a href="calendar.html" class="nav-link">Calendar</a>
+      <a href="rugaciuni.html" class="nav-link">Rugăciuni</a>
+      <a href="calea_crucii.html" class="nav-link">Calea Crucii</a>
+      <a href="paraclis.html" class="nav-link">Paraclis</a>
+      <a href="biserica-catolica-rasarit.html" class="nav-link">Biserici Catolice Răsăritene</a>
+      <a href="despre.html" class="nav-link">Despre</a>
+      <a href="contact.html" class="nav-link nav-cta">Contact</a>
+    </nav>
+  </header>
+
+  <main class="page">
+    <section id="greco-calendar">
+      <h2>Calendar greco-catolic 2026</h2>
+      <p class="lede">Selectați luna pentru a afișa calendarul oficial publicat pe catholica.ro (calendar greco-catolic 2026).</p>
+
+      <div class="months">
+        <button data-month="1">Ianuarie</button>
+        <button data-month="2">Februarie</button>
+        <button data-month="3">Martie</button>
+        <button data-month="4">Aprilie</button>
+        <button data-month="5">Mai</button>
+        <button data-month="6">Iunie</button>
+        <button data-month="7">Iulie</button>
+        <button data-month="8">August</button>
+        <button data-month="9">Septembrie</button>
+        <button data-month="10">Octombrie</button>
+        <button data-month="11">Noiembrie</button>
+        <button data-month="12">Decembrie</button>
+      </div>
+
+      <div class="calendar-embed">
+        <iframe id="calendar-iframe" src="https://www.catholica.ro/calendar-greco-catolic-2026/" title="Calendar greco-catolic 2026" frameborder="0" sandbox="allow-same-origin allow-scripts allow-popups allow-forms"></iframe>
+      </div>
+
+      <p class="small">Sursa: <a href="https://www.catholica.ro/calendar-greco-catolic-2026/" target="_blank" rel="noopener">catholica.ro - Calendar greco-catolic 2026</a></p>
+    </section>
+
+    <script>
+      (function(){
+        const base = 'https://www.catholica.ro/calendar-greco-catolic-2026/';
+        const iframe = document.getElementById('calendar-iframe');
+        const buttons = document.querySelectorAll('#greco-calendar .months button');
+
+        function setActive(btn){
+          buttons.forEach(b=>b.classList.remove('active'));
+          btn.classList.add('active');
+        }
+
+        buttons.forEach(btn=>{
+          btn.addEventListener('click', ()=>{
+            const m = parseInt(btn.getAttribute('data-month'),10);
+            // mapping: page 1 -> base, page 2 -> /2/ etc.
+            const url = (m===1) ? base : base + m + '/';
+            iframe.src = url;
+            setActive(btn);
+          });
+        });
+
+        // set default active
+        buttons[0].classList.add('active');
+      })();
+    </script>
+
+    <style>
+      #calendar-iframe{width:100%;height:780px;border:1px solid #ddd}
+      #greco-calendar .months{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px}
+      #greco-calendar .months button{padding:6px 10px;border:1px solid #ccc;background:#fff;cursor:pointer}
+      #greco-calendar .months button.active{background:#0a6ebd;color:#fff;border-color:#0a6ebd}
+      #greco-calendar .calendar-embed{margin-bottom:8px}
+    </style>
+  </main>
+
+  <footer class="site-footer">
+    <p>Program catehetic greco-catolic · <span class="current-year"></span> · <a href="rugaciuni.html">Rugăciuni</a> · <a href="calea_crucii.html">Calea Crucii</a> · <a href="paraclis.html">Paraclis</a></p>
+  </footer>
+</body>
+</html>
