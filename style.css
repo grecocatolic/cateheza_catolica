@@ -205,6 +205,75 @@ a {
   margin-bottom: 18px;
 }
 
+/* ================================
+   RESURSE LITURGICE (FINAL)
+   - pentru link-urile din header:
+     .header-liturgy-btn
+================================ */
+
+.page-header {
+  background: linear-gradient(160deg, rgba(21, 25, 43, 0.9), rgba(15, 19, 34, 0.95));
+  border: 1px solid rgba(138, 242, 200, 0.16);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 18px;
+}
+
+.page-header .lede {
+  margin: 0 0 14px;
+  line-height: 1.6;
+  color: var(--muted);
+}
+
+.header-liturgy-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  width: 100%;
+  padding: 14px 16px;
+  margin: 10px 0;
+
+  border-radius: 12px;
+  background: rgba(138, 242, 200, 0.10);
+  border: 1px solid rgba(138, 242, 200, 0.22);
+  color: var(--text);
+
+  font-weight: 700;
+  line-height: 1.25;
+  text-align: center;
+
+  transition: transform 0.2s ease, background 0.2s ease, border 0.2s ease, box-shadow 0.2s ease;
+}
+
+.header-liturgy-btn:hover {
+  background: rgba(138, 242, 200, 0.16);
+  border: 1px solid rgba(138, 242, 200, 0.32);
+  transform: translateY(-1px);
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.35);
+}
+
+.header-liturgy-btn:focus-visible {
+  outline: 2px solid rgba(138, 242, 200, 0.55);
+  outline-offset: 3px;
+}
+
+@media (max-width: 640px) {
+  .page-header {
+    padding: 14px;
+  }
+
+  .header-liturgy-btn {
+    padding: 12px 12px;
+    font-size: 15px;
+  }
+}
+
+/* ================================
+   RESTUL CSS-ULUI TAU
+================================ */
+
 .weeks {
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 }
