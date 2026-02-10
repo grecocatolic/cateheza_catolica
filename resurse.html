@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="ro">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Resurse Liturgice | Lumina Tinerilor</title>
-  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href="style.css" />
   <script defer src="script.js"></script>
+
   <style>
     .liturgy-link {
       display: inline-block;
@@ -44,12 +46,13 @@
     }
   </style>
 </head>
+
 <body>
   <header class="site-header">
     <div class="brand">Lumina Tinerilor</div>
     <nav class="nav">
       <a href="index.html" class="nav-link">Acasă</a>
-      <a href="resurse.html" class="nav-link">Resurse</a>
+      <a href="resurse.html" class="nav-link active">Resurse</a>
       <a href="calendar.html" class="nav-link">Calendar</a>
       <a href="rugaciuni.html" class="nav-link">Rugăciuni</a>
       <a href="calea_crucii.html" class="nav-link">Calea Crucii</a>
@@ -60,176 +63,198 @@
     </nav>
   </header>
 
+  <!-- IMPORTANT: un singur <main class="page"> -->
   <main class="page">
-    <main class="page">
-  <header class="page-header">
-    <p class="lede">
-      Acces la textele liturgice si resurse utile pentru Duminici, Sarbatori si disciplina bisericeasca:
-    </p>
-
-    <div>
-      <a
-        href="https://www.eparhiaclujgherla.ro/liturgic/"
-        target="_blank"
-        class="header-liturgy-btn"
-      >
-        Vecernia, Utrenia, Orele si Liturghia Sf. Ioan Gura de Aur
-      </a>
-    </div>
-
-    <div>
-      <a
-        href="https://www.vatican.va/archive/compendium_ccc/documents/archive_2005_compendium-ccc_ro.html"
-        target="_blank"
-        class="header-liturgy-btn"
-      >
-        Catehismul Bisericii Catolice
-      </a>
-    </div>
-
-    <div>
-      <a
-        href="https://mobile.catholica.ro/agc2026/"
-        target="_blank"
-        class="header-liturgy-btn"
-      >
-        Agenda Liturgică Greco-Catolica 2026 (Apostolul și Evanghelia Zilei)
-      </a>
-    </div>
-
-    <div>
-      <a
-        href="https://www.bru.ro/varia/cceo/"
-        target="_blank"
-        class="header-liturgy-btn"
-      >
-        Codul de Drept Canonic al Bisericilor Orientale
-      </a>
-    </div>
-  </header>
-</main>
-
+    <!-- Blocul cu cele 4 link-uri (vizibile) -->
     <header class="page-header">
       <p class="lede">
-        Acces la textele liturgice pentru Duminici si Sarbatori dupa traditia greco-catolica:
+        Acces la textele liturgice si resurse utile pentru Duminici, Sarbatori si disciplina bisericeasca:
       </p>
 
       <a
         href="https://www.eparhiaclujgherla.ro/liturgic/"
         target="_blank"
+        rel="noopener"
         class="header-liturgy-btn"
       >
         Vecernia, Utrenia, Orele si Liturghia Sf. Ioan Gura de Aur
       </a>
-</header>
+
+      <a
+        href="https://www.vatican.va/archive/compendium_ccc/documents/archive_2005_compendium-ccc_ro.html"
+        target="_blank"
+        rel="noopener"
+        class="header-liturgy-btn"
+      >
+        Catehismul Bisericii Catolice
+      </a>
+
+      <a
+        href="https://mobile.catholica.ro/agc2026/"
+        target="_blank"
+        rel="noopener"
+        class="header-liturgy-btn"
+      >
+        Agenda Liturgica Greco-Catolica 2026 (Apostolul si Evanghelia Zilei)
+      </a>
+
+      <a
+        href="https://www.bru.ro/varia/cceo/"
+        target="_blank"
+        rel="noopener"
+        class="header-liturgy-btn"
+      >
+        Codul de Drept Canonic al Bisericilor Orientale
+      </a>
+    </header>
 
     <section class="grid weeks">
       <article class="card">
-        <h3>Săpt. 1 — Convertirea, Pocăința</h3>
+        <h3>Săptămâna 1 — Convertirea, Pocăința</h3>
         <p>Lectură: Matei 3, 2; 4, 17, Marcu 1, 15., Luca 13, 3-5. Focus pe necesitatea pocaintei pentru mantuire.</p>
       </article>
       <article class="card">
-        <h3>Săpt. 2 — Rugăciunea</h3>
+        <h3>Săptămâna 2 — Rugăciunea</h3>
         <p>Rugăciuni începătoare. Rugăciunea inimii. Muzică și imnografie bizantină. Patrologie - Viețile sfinților. Catehismul Bisericii Catolice. Bibliografie.</p>
       </article>
       <article class="card">
-        <h3>Săpt. 3 — Sfânta Scriptură</h3>
+        <h3>Săptămâna 3 — Sfânta Scriptură</h3>
         <p>Cum citim Evanghelia: Lectio Divina, exegeză biblică, meditație, profeții mesianice.</p>
       </article>
       <article class="card">
-        <h3>Săpt. 4 — Biserica</h3>
+        <h3>Săptămâna 4 — Biserica</h3>
         <p>Comunitate, ierarhie, slujire. Succesiune Apostolică. Modelul Faptelor Apostolilor.</p>
       </article>
       <article class="card">
-        <h3>Săpt. 5 — Sfânta Liturghie</h3>
+        <h3>Săptămâna 5 — Sfânta Liturghie</h3>
         <p>Parcurgerea Liturghiei Sf. Ioan Gură de Aur, Sfânta Liturghie a Sf. Vasile cel Mare, Sfânta Liturghie a Darurilor mai inainte sfintite: gesturi, simboluri.</p>
       </article>
       <article class="card">
-        <h3>Săpt. 6 — Sacramentele (Taine)</h3>
-        <p> Botezul, Mirungerea, Euharistie: taine inițiere și întărire pentru misiune.</p>
+        <h3>Săptămâna 6 — Sacramentele (Taine)</h3>
+        <p>Botezul, Mirungerea, Euharistie: taine inițiere și întărire pentru misiune.</p>
       </article>
       <article class="card">
-        <h3>Săpt. 7 — Spovada (Pocaința, Mărturisirea, Reconcilierea)</h3>
+        <h3>Săptămâna 7 — Spovada (Pocaința, Mărturisirea, Reconcilierea)</h3>
         <p>Examen de conștiință, milostivire, relansarea vieții spirituale.</p>
       </article>
       <article class="card">
-        <h3>Săpt. 8 — Morala creștină și Dogmatică</h3>
+        <h3>Săptămâna 8 — Morala creștină și Dogmatică</h3>
         <p>Virtuțile cardinale, Virtuți cardinale, Păcate, Harul, Cele 10 Porunci, Porunci Bisericești, Posturi.</p>
       </article>
       <article class="card">
-        <h3>Săpt. 9 — Milostenia</h3>
+        <h3>Săptămâna 9 — Milostenia</h3>
         <p>Fapte concrete de slujire: Faptele milei trupești și sufletești.</p>
       </article>
       <article class="card">
-        <h3>Săpt. 10 — Rugăciunea comună și particulară</h3>
+        <h3>Săptămâna 10 — Rugăciunea comună și particulară</h3>
         <p>Cele 7 Laude, Paraclisul Maicii Domnului, Acastiste, Sf. Rozariu, Cele 8 glasuri bizantine, imnografie și cântări bizantine pentru tineri.</p>
       </article>
       <article class="card">
-        <h3>Săpt. 11 — Vocatie</h3>
+        <h3>Săptămâna 11 — Vocatie</h3>
         <p>Ascultare, curaj, povestiri de viață: preoție, familie, laicat.</p>
       </article>
       <article class="card">
-        <h3>Săpt. 12 — Misiune</h3>
+        <h3>Săptămâna 12 — Misiune</h3>
         <p>Trimiterea: cum continuăm după parcurs? Plan personal și de grup.</p>
       </article>
-      </section>
-      <section class="liturgy-services">
-        <h2>Serviciile Divine pentru Duminici și Sărbători</h2>
-        <p>
-          Aici găsești textele complete ale serviciilor divine din tradiția Bizantină, adaptate pentru comunitatea greco-catolică.
-          Fiecare serviciu este o trepată în ascensiunea către întâlnirea cu Dumnezeu.
-        </p>
+    </section>
 
-        <div class="liturgy-grid">
-          <div class="liturgy-card">
-            <h3>🌙 Vecernia</h3>
-            <p>Slujba de seară, Lumina lina a sfintei Măriri a Tatalui ceresc, Celui fara de moarte, a Sfantului, Fericitului, Isuse Hristoase, venind la apusul soarelui, vazand lumina cea de seara, laudam pe Tatal si pe Fiul si pe Sfantul Spirit, Dumnezeu; vrednic esti in toata vremea a fi laudat de glasuri cuvioase, Fiul lui Dumnezeu, Cel ce dai viata, pentru aceasta lumea Te mărește.</p>
-            <a href="https://www.eparhiaclujgherla.ro/liturgic/?service=vecernia" class="liturgy-link" target="_blank">Citește Vecernia</a>
-          </div>
+    <section class="liturgy-services">
+      <h2>Serviciile Divine pentru Duminici și Sărbători</h2>
+      <p>
+        Aici găsești textele complete ale serviciilor divine din tradiția Bizantină, adaptate pentru comunitatea greco-catolică.
+        Fiecare serviciu este o trepată în ascensiunea către întâlnirea cu Dumnezeu.
+      </p>
 
-          <div class="liturgy-card">
-            <h3>🌅 Utrenia</h3>
-            <p>Slujba dimineții, care aduce aminte de Învierea Domnului, cu Laude și Doxologia Mare, adică Imnul îngeresc (pentru că primul ei veset a fost cântat de îngeri la Nașterea Domnului): Mărire întru cei de Sus lui Dumnezeu şi pe pământ pace, între oameni bunăvoire!.</p>
-            <a href="https://www.eparhiaclujgherla.ro/liturgic/?service=utrenia" class="liturgy-link" target="_blank">Citește Utrenia</a>
-          </div>
-
-          <div class="liturgy-card">
-            <h3>⛩️ Ora I</h3>
-            <p>Prima oră a zilei (cca 6:00), când Hristos a fost judecat și condamnat la moarte.</p>
-            <a href="https://www.eparhiaclujgherla.ro/liturgic/?service=ora1" class="liturgy-link" target="_blank">Citește Ora I</a>
-          </div>
-
-          <div class="liturgy-card">
-            <h3>✨ Sf. Liturghie</h3>
-            <p>Slujba cea mai sfântă din zi.</p>
-            <a href="https://www.eparhiaclujgherla.ro/liturgic/?service=liturghia" class="liturgy-link" target="_blank">Citește Liturghia</a>
-          </div>
-
-          <div class="liturgy-card">
-            <h3>☀️ Ora a III-a</h3>
-            <p>A treia oră (cca 9:00), când Spiritul Sfânt s-a pogorat asupra Apostolilor la Cincizecime.</p>
-            <a href="https://www.eparhiaclujgherla.ro/liturgic/?service=ora3" class="liturgy-link" target="_blank">Citește Ora a III-a</a>
-          </div>
-
-          <div class="liturgy-card">
-            <h3>☀️ Ora a VI-a</h3>
-            <p>A șasea oră (cca 12:00), când Hristos a fost răstignit.</p>
-            <a href="https://www.eparhiaclujgherla.ro/liturgic/?service=ora6" class="liturgy-link" target="_blank">Citește Ora a VI-a</a>
-          </div>
-
-          <div class="liturgy-card">
-            <h3>☀️ Ora a IX-a</h3>
-            <p>A noua oră (cca 15:00), când Hristos și-a dat sufletul pe cruce pentru mântuirea lumii.</p>
-            <a href="https://www.eparhiaclujgherla.ro/liturgic/?service=ora9" class="liturgy-link" target="_blank">Citește Ora a IX-a</a>
-          </div>
+      <div class="liturgy-grid">
+        <div class="liturgy-card">
+          <h3>🌙 Vecernia</h3>
+          <p>
+            Slujba de seară, Lumina lina a sfintei Măriri a Tatalui ceresc, Celui fara de moarte, a Sfantului, Fericitului,
+            Isuse Hristoase, venind la apusul soarelui, vazand lumina cea de seara, laudam pe Tatal si pe Fiul si pe Sfantul
+            Spirit, Dumnezeu; vrednic esti in toata vremea a fi laudat de glasuri cuvioase, Fiul lui Dumnezeu, Cel ce dai viata,
+            pentru aceasta lumea Te mărește.
+          </p>
+          <a href="https://www.eparhiaclujgherla.ro/liturgic/?service=vecernia" class="liturgy-link" target="_blank" rel="noopener">Citește Vecernia</a>
         </div>
-      </section>
+        <div class="liturgy-card">
+
+        <h3>🌙 Dupacinar (Pavecernița)</h3>
+        <p>
+          Slujba de seara tarzie, savarsita dupa cină, care încheie ziua în liniște și pocainta,
+          încredințând sufletul și trupul in mâinile lui Dumnezeu si cerând pace, iertare si
+          ocrotire pentru noaptea ce urmează.
+        </p>
+      </div>
+
+      <div class="liturgy-card">
+        <h3>🌙 Miezonoptica</h3>
+        <p>
+          Slujba de priveghere a nopții, care cheama la trezvie si rugaciune, amintind
+          de venirea neasteptata a Domnului și pregatind inima pentru lumina Invierii. Iată, Mirele vine în miezul nopții
+Și fericită e sluga pe care o va afla priveghind
+Iar nevrednică-i aceea
+Pe care o va afla lenevindu-se.
+Vezi, dar, suflete al meu,
+Cu somnul să nu te îngreuiezi
+Ca să nu te dai morții
+Și afară de Împărăție să te încui
+Ci te deșteaptă, strigând:
+Sfânt, Sfânt, Sfânt
+Ești Dumnezeul nostru,
+Pentru rugăciunile Născătoarei de Dumnezeu
+Îndură-te spre noi!   Acest tropar este extrem de cunoscut credincioșilor pentru că se cântă cu mare solemnitate în primele trei zile din Săptămâna Patimilor (În Sfânta și Marea Luni, Marți și Miercuri), în cadrul slujbelor numite Denii.
+        </p>
+      </div>
+
+        <div class="liturgy-card">
+          <h3>🌅 Utrenia</h3>
+          <p>
+            Slujba dimineții, care aduce aminte de Învierea Domnului, cu Laude și Doxologia Mare, adică Imnul îngeresc
+            (pentru că primul ei veset a fost cântat de îngeri la Nașterea Domnului): Mărire întru cei de Sus lui Dumnezeu şi
+            pe pământ pace, între oameni bunăvoire!.
+          </p>
+          <a href="https://www.eparhiaclujgherla.ro/liturgic/?service=utrenia" class="liturgy-link" target="_blank" rel="noopener">Citește Utrenia</a>
+        </div>
+
+        <div class="liturgy-card">
+          <h3>☀️ Ora I</h3>
+          <p>Prima oră a zilei (cca 6:00), când Hristos a fost judecat și condamnat la moarte.</p>
+          <a href="https://www.eparhiaclujgherla.ro/liturgic/?service=ora1" class="liturgy-link" target="_blank" rel="noopener">Citește Ora I</a>
+        </div>
+
+        <div class="liturgy-card">
+          <h3>☀️ Sfânta Liturghie</h3>
+          <p>Slujba cea mai sfântă din zi.</p>
+          <a href="https://www.eparhiaclujgherla.ro/liturgic/?service=liturghia" class="liturgy-link" target="_blank" rel="noopener">Citește Liturghia</a>
+        </div>
+
+        <div class="liturgy-card">
+          <h3>☀️ Ora a III-a</h3>
+          <p>A treia oră (cca 9:00), când Spiritul Sfânt s-a pogorat asupra Apostolilor la Cincizecime.</p>
+          <a href="https://www.eparhiaclujgherla.ro/liturgic/?service=ora3" class="liturgy-link" target="_blank" rel="noopener">Citește Ora a III-a</a>
+        </div>
+
+        <div class="liturgy-card">
+          <h3>☀️ Ora a VI-a</h3>
+          <p>A șasea oră (cca 12:00), când Hristos a fost răstignit.</p>
+          <a href="https://www.eparhiaclujgherla.ro/liturgic/?service=ora6" class="liturgy-link" target="_blank" rel="noopener">Citește Ora a VI-a</a>
+        </div>
+
+        <div class="liturgy-card">
+          <h3>☀️ Ora a IX-a</h3>
+          <p>A noua oră (cca 15:00), când Hristos și-a dat sufletul pe cruce pentru mântuirea lumii.</p>
+          <a href="https://www.eparhiaclujgherla.ro/liturgic/?service=ora9" class="liturgy-link" target="_blank" rel="noopener">Citește Ora a IX-a</a>
+        </div>
+      </div>
+    </section>
 
     <section class="themes">
       <header class="section-header">
         <p class="eyebrow">6 teme de aprofundare</p>
         <h2>Idee-cheie, exercițiu și rugăciune</h2>
       </header>
+
       <div class="grid theme-grid">
         <article class="card">
           <h3>Lumina cuvântului</h3>
@@ -237,30 +262,35 @@
           <p><strong>Exercițiu:</strong> Lectio divina pe un text scurt, împărtășire în 3 minute.</p>
           <p><strong>Rugăciune:</strong> „Doamne, Isuse Hristoase, Fiul lui Dumnezeu, miluiește-mă pe mine, păcătosul.”</p>
         </article>
+
         <article class="card">
           <h3>Inima care iartă</h3>
           <p><strong>Idee:</strong> Milostivirea - Faptele milei trupești și sufletești.</p>
           <p><strong>Exercițiu:</strong> Scrie o scrisoare de iertare (poate rămâne personală).</p>
           <p><strong>Rugăciune:</strong> Psalmul 50 citit încet, cu pauze.</p>
         </article>
+
         <article class="card">
           <h3>Trup și suflet</h3>
           <p><strong>Idee:</strong> Corpul participă la rugăciune (metanii, semnul Sfintei Cruci).</p>
           <p><strong>Exercițiu:</strong> Rugăciune de dimineață, de seară și înainte și după masă.</p>
           <p><strong>Rugăciune:</strong> „Rugăciuni din Orologhion (Ceaslov).”</p>
         </article>
+
         <article class="card">
           <h3>Comunitate vie</h3>
           <p><strong>Idee:</strong> Biserica e trup, nu doar instituție.</p>
           <p><strong>Exercițiu:</strong> Roluri rotative: cine deschide rugăciunea, cine citește, cine moderează.</p>
           <p><strong>Rugăciune:</strong> Rugăciune pentru unitate și curaj în mărturie.</p>
         </article>
+
         <article class="card">
           <h3>Liturghia de acasă</h3>
           <p><strong>Idee:</strong> Liturghia modelează săptămâna.</p>
           <p><strong>Exercițiu:</strong> Pregătește duminica: lecturi, tropar, o intenție de adus la altar.</p>
           <p><strong>Rugăciune:</strong> Troparul Învierii cântat în grup.</p>
         </article>
+
         <article class="card">
           <h3>Pași în misiune</h3>
           <p><strong>Idee:</strong> Fiecare are un dar pentru ceilalți.</p>
@@ -273,11 +303,12 @@
     <section>
       <h2>Cum se structurează serviciile divine?</h2>
       <p>
-        <strong>Vecernia și Utrenia</strong> sunt slujbele principale care marchează trecerea de zi. 
-        Vecernia cuprinde Psalmii 103, 140, 141, 129 și 116 (la Vecernie) și iar Utrenia cuprinde cei 6 Psalmi de la începetul Utreniei, precum și Psalmul 50, Psalmii 148-150.
+        <strong>Vecernia și Utrenia</strong> sunt slujbele principale care marchează trecerea de zi.
+        Vecernia cuprinde Psalmii 103, 140, 141, 129 și 116 (la Vecernie) și iar Utrenia cuprinde cei 6 Psalmi de la începetul
+        Utreniei, precum și Psalmul 50, Psalmii 148-150.
       </p>
       <p>
-        <strong>Orele (I, III, VI, IX), Dupăcinarul, Miezonoptica</strong> sunt slujbele mai mici care sfințesc ore importante ale zilei, 
+        <strong>Orele (I, III, VI, IX), Dupăcinarul, Miezonoptica</strong> sunt slujbele mai mici care sfințesc ore importante ale zilei,
         cu referințe la patimile și învățăturile Domnului și Dumnezeului și Mântuitorului nostru Isus Hristos.
       </p>
       <p>
@@ -291,48 +322,40 @@
       <div class="grid highlight">
         <article class="card">
           <h3>Tropar, Condac, Icos, Sedelne, Stih, Canon, Glasuri bisericești (Viersuri) I-VIII, Luminătoarele învierii I-XI</h3>
-          <p>
-            Versurile cheie care rezumă sensul duminicii sau sărbătorii. Perfect pentru cântarea în grup.
-          </p>
+          <p>Versurile cheie care rezumă sensul duminicii sau sărbătorii. Perfect pentru cântarea în grup.</p>
         </article>
+
         <article class="card">
           <h3>Psalmii</h3>
-          <p>
-            Versetele din Cartea Psalmilor care formează coloana vertebrală a fiecărei slujbe.
-          </p>
+          <p>Versetele din Cartea Psalmilor care formează coloana vertebrală a fiecărei slujbe.</p>
         </article>
+
         <article class="card">
           <h3>Cărți de cult: Orologhion, Minei, Octoihul Mare, Triodul, Penticostarul</h3>
-          <p>
-            Imnografia Bizantină - cântări liturgice ce cumulează predica patristică și experiența Bisericii.
-          </p>
+          <p>Imnografia Bizantină - cântări liturgice ce cumulează predica patristică și experiența Bisericii.</p>
         </article>
-        <article class="card">
+
+        <article classர்="card">
           <h3>Apostolul și Evanghelia</h3>
-          <p>
-            Citirile biblice din Noul Testament care deschid temele duminicii.
-          </p>
+          <p>Citirile biblice din Noul Testament care deschid temele duminicii.</p>
         </article>
       </div>
     </section>
 
     <section>
       <h2>Pregătirea pentru Liturghie</h2>
+      <p><strong>Cu o zi înainte,</strong> citește textele liturgice și reflectează asupra temei săptămânii.</p>
       <p>
-        <strong>Cu o zi înainte,</strong> citește textele liturgice și reflectează asupra temei săptămânii.
+        <strong>Dimineață,</strong> vino cu intenții concrete: pentru o persoană bolnavă, pentru pace în lume, pentru vocații în Biserică,
+        rugăciuni pentru cei adormiți și pentru sufletele din Purgator, pentru propriul parcurs spiritual.
       </p>
       <p>
-        <strong>Dimineață,</strong> vino cu intenții concrete: pentru o persoană bolnavă, pentru pace în lume, 
-        pentru vocații în Biserică, rugăciuni pentru cei adormiți și pentru sufletele din Purgator, pentru propriul parcurs spiritual.
+        <strong>La altar,</strong> ascultă cuvintele cu atenție. Fiecare frază pe care o spune preotul e o deschidere către ceruri.
+        Comunia cu Trupul și Sângele lui Hristos e mângâierea supremă.
       </p>
       <p>
-        <strong>La altar,</strong> ascultă cuvintele cu atenție. Fiecare frază pe care o spune preotul 
-        e o deschidere către ceruri. Comunia cu Trupul și Sângele lui Hristos e mângâierea supremă 
-        și temenul nou de viață.
-      </p>
-      <p>
-        <strong>După Sfânta Liturghie,</strong> dă-ți timp să meditezi. Nu pleca imediat. Parazisul e întotdeauna deschis 
-        pentru o rugăciune de mulțumire liniștit.
+        <strong>După Sfânta Liturghie,</strong> dă-ți timp să meditezi. Nu pleca imediat. Parazisul e întotdeauna deschis pentru o rugăciune
+        de mulțumire liniștit.
       </p>
     </section>
 
@@ -346,10 +369,12 @@
   </main>
 
   <footer class="site-footer">
-    <p>Program catehetic greco-catolic· <span class="current-year"></span> · <a href="rugaciuni.html">Rugăciuni</a> · <a href="calea_crucii.html">Calea Crucii</a> · <a href="paraclis.html">Paraclis</a></p>
+    <p>
+      Program catehetic greco-catolic· <span class="current-year"></span> ·
+      <a href="rugaciuni.html">Rugăciuni</a> ·
+      <a href="calea_crucii.html">Calea Crucii</a> ·
+      <a href="paraclis.html">Paraclis</a>
+    </p>
   </footer>
 </body>
-
 </html>
-
-
