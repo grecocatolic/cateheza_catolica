@@ -406,6 +406,13 @@ textarea:focus {
 }
 
 @media (max-width: 640px) {
+  /* Pe mobil: antetul nu rămâne "sticky" ca să nu ocupe prea mult ecranul */
+  .site-header {
+    position: relative;
+    top: auto;
+    backdrop-filter: none;
+  }
+
   .nav {
     width: 100%;
     justify-content: center;
